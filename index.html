@@ -13,80 +13,82 @@
 <body>
     <form>
         <div class="container">
-            <h1 class="bg-light">Payment form example</h1>
-            <div class="alert alert-danger" role="alert">
-                Some fields are missing
-            </div>
-            <div class="form-row d-flex justify-content-evenly">
-                <div class="form-group col-md-4 px-3">
-                    <label for="cardNumber">Card #</label>
-                    <input type="card" class="form-control" id="cardNumber" placeholder="XXXXXXXXXXXXXXXXXXXXX">
+            <div class="card">
+                <h1 class="card-header bg-light">Payment form example</h1>
+                <div class="alert alert-danger" role="alert">
+                    Some fields are missing
                 </div>
-                <div class="form-group col-md-4 px-3">
-                    <label for="securityCode">CVC #</label>
-                    <input type="code" class="form-control" id="securityCode" placeholder="0000">
-                </div>
-                <div class="form-group col-md-4 px-3">
-                    <label for="amountDue">Amount</label>
-                    <input type="cost" class="form-control" id="amountDue" placeholder="Amount">
-                </div>
-            </div>
-            <div class="form-row d-flex">
-                <div class="form-group col px-3">
-                    <label for="firstName">First Name</label>
-                    <input type="text" class="form-control" id="firstName">
-                </div>
-                <div class="form-group col px-3">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" class="form-control" id="lastName">
-                </div>
-            </div>
-            <div class="form-row d-flex">
-                <div class="form-group col-md-6 px-3">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="form-group col-md-4 px-3">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
-                        <option selected>Pick a state</option>
-                        <option>...</option>
-                    </select>
-                </div>
-                <div class="form-group col-md-2 px-3">
-                    <label for="inputZip">Postal Code</label>
-                    <input type="text" class="form-control" id="inputZip">
-                </div>
-            </div>
-            <div class="form-row d-flex justify-content-between">
-                <div class="form-group py-4 px-3 col-2">
-                    <label>We accept:</label>
-                    <div class="bg-secondary text-white px-2 gap-2">
-                        <input type="radio" id="masterCard" name="paymentType" value="masterCard" checked> <i
-                            class="fa-brands fa-cc-mastercard"></i>
-
-                        <input type="radio" id="visa" name="paymentType value=" visa"> <i
-                            class="fa-brands fa-cc-visa"></i>
-
-                        <input type="radio" id="dinersClub" name="paymentType value=" dinersClub"> <i
-                            class="fa-brands fa-cc-diners-club"></i>
-
-                        <input type="radio" id="americanExpress" name="paymentType" value="americanExpress"> <i
-                            class="fa-brands fa-cc-amex"></i>
+                <div class="form-row d-flex justify-content-evenly">
+                    <div class="form-group col-md-4 px-3">
+                        <label for="cardNumber">Card #</label>
+                        <input type="card" class="form-control" id="cardNumber" placeholder="XXXXXXXXXXXXXXXXXXXXX">
+                    </div>
+                    <div class="form-group col-md-4 px-3">
+                        <label for="securityCode">CVC #</label>
+                        <input type="code" class="form-control" id="securityCode" placeholder="0000">
+                    </div>
+                    <div class="form-group col-md-4 px-3">
+                        <label for="amountDue">Amount</label>
+                        <input type="cost" class="form-control" id="amountDue" placeholder="Amount">
                     </div>
                 </div>
-                <div class="form-group col-md-6 px-3 py-4">
+                <div class="form-row d-flex">
+                    <div class="form-group col px-3">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName">
+                    </div>
+                    <div class="form-group col px-3">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName">
+                    </div>
+                </div>
+                <div class="form-row d-flex">
+                    <div class="form-group col-md-6 px-3">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4 px-3">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Pick a state</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2 px-3">
+                        <label for="inputZip">Postal Code</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                </div>
+                <div class="form-row d-flex justify-content-between">
+                    <div class="form-group py-4 px-3 col-2">
+                        <label>We accept:</label>
+                        <div class="bg-secondary text-white px-2 gap-2">
+                            <input type="radio" id="masterCard" name="paymentType" value="masterCard" checked> <i
+                                class="fa-brands fa-cc-mastercard"></i>
+
+                            <input type="radio" id="visa" name="paymentType value=" visa"> <i
+                                class="fa-brands fa-cc-visa"></i>
+
+                            <input type="radio" id="dinersClub" name="paymentType value=" dinersClub"> <i
+                                class="fa-brands fa-cc-diners-club"></i>
+
+                            <input type="radio" id="americanExpress" name="paymentType" value="americanExpress"> <i
+                                class="fa-brands fa-cc-amex"></i>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6 px-3 py-5">
                         <label for="message">Message</label>
                         <br>
                         <input type="text" id="name" name="name" class="col-md-9 h-100">
                         <br>
                         <p><small class="text-muted">Add any notes here.</small></p>
+                    </div>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="bg-light col float-end">
-                    <button type="submit" class="btn btn-secondary">Cancel</button>
-                    <button type="submit" class="btn btn-primary">Send</button>
+                <div class="card-footer form-row">
+                    <div class="bg-light col float-end">
+                        <button type="submit" class="btn btn-secondary">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
                 </div>
             </div>
         </div>

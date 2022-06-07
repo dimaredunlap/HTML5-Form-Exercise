@@ -58,36 +58,33 @@
                     <input type="text" class="form-control" id="inputZip">
                 </div>
             </div>
-            <div class="form-row hstack justify-content-evenly">
-                <div class="col-3 text-center">
-                    <div class="form-group py-4 px-3">
-                        <label>We accept:</label>
-                        <div class="bg-secondary text-white px-2 hstack gap-2">
-                            <input type="radio" id="masterCard" name="paymentType" value="masterCard" checked> <i
-                                class="fa-brands fa-cc-mastercard"></i>
+            <div class="form-row d-flex justify-content-between">
+                <div class="form-group py-4 px-3 col-2">
+                    <label>We accept:</label>
+                    <div class="bg-secondary text-white px-2 gap-2">
+                        <input type="radio" id="masterCard" name="paymentType" value="masterCard" checked> <i
+                            class="fa-brands fa-cc-mastercard"></i>
 
-                            <input type="radio" id="visa" name="paymentType value=" visa"> <i
-                                class="fa-brands fa-cc-visa"></i>
+                        <input type="radio" id="visa" name="paymentType value=" visa"> <i
+                            class="fa-brands fa-cc-visa"></i>
 
-                            <input type="radio" id="dinersClub" name="paymentType value=" dinersClub"> <i
-                                class="fa-brands fa-cc-diners-club"></i>
+                        <input type="radio" id="dinersClub" name="paymentType value=" dinersClub"> <i
+                            class="fa-brands fa-cc-diners-club"></i>
 
-                            <input type="radio" id="americanExpress" name="paymentType" value="americanExpress"> <i
-                                class="fa-brands fa-cc-amex"></i>
-                        </div>
-
+                        <input type="radio" id="americanExpress" name="paymentType" value="americanExpress"> <i
+                            class="fa-brands fa-cc-amex"></i>
                     </div>
                 </div>
-                <div class="col-4 mt-3">
-                    <div class="msgBox">
+                <div class="form-group col-md-6 px-3 py-4">
                         <label for="message">Message</label>
-                        <input type="text" id="name" name="name">
+                        <br>
+                        <input type="text" id="name" name="name" class="col-md-9 h-100">
+                        <br>
                         <p><small class="text-muted">Add any notes here.</small></p>
-                    </div>
                 </div>
             </div>
             <div class="form-row">
-                <div class="bg-light col float-end" id="buttons">
+                <div class="bg-light col float-end">
                     <button type="submit" class="btn btn-secondary">Cancel</button>
                     <button type="submit" class="btn btn-primary">Send</button>
                 </div>
